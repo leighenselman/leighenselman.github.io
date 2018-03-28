@@ -1,0 +1,400 @@
+
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element * {
+  box-sizing: border-box;
+}*/
+
+
+/* Fix for responsive images img {
+  max-width: 100%;*/
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+</style>
+
+body {
+	margin: auto;
+}
+
+nav {
+  padding-top: 30px;
+	position: sticky;
+	width: 100%;
+	text-align: center;
+}
+
+nav a {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  color: #14261C;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 15px;
+  letter-spacing: 5px;
+}
+
+nav a:hover {
+  color: #31731F;
+  background-color: #BDBFBF;
+  /* padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px; */
+	transition: all slow ease-in;
+}
+
+/* .displayNav {
+	transform: translateY(100%);
+	transition: transform 0.3s ease;
+} */
+
+.hamburger {
+	font-size: 27px;
+  display: none;
+	text-align: left;
+	border: none;
+}
+
+header {
+  background-image: url(../img/front_of_hostel.jpg);
+  max-width: 100%;
+  height: 700px;
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+  padding-top: 340px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 60px;
+  color: #BDBFBF;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+ul li {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 15px;
+	color: #31731F;
+	font-weight: bold;
+}
+
+p {
+	font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+}
+
+p a {
+	color: #31731F;
+	text-decoration: none;
+}
+.section1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  color: #14261C;
+  background-color: #BDBFBF;
+  text-align: center;
+  padding-top:75px;
+  padding-bottom: 75px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.section2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  color: #14261C;
+	background-color: #BDBFBF;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.section2 h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
+	padding-top: 25px;
+	color: #14261C;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  color: #BDBFBF;
+	background-color: #14261C;
+  padding-bottom: 15px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.section3 p {
+		text-align: center;
+}
+
+.section3 h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
+	padding-top: 25px;
+	color: #BDBFBF;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section4 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  color: #BDBFBF;
+	background-color: #14261C;
+  padding-bottom: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.section4 h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
+	padding-top: 15px;
+	color: #BDBFBF;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.littlehotelier {
+	text-align: center;
+	background-color: #14261C;
+}
+
+.littlehotelier h1 {
+	font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
+	padding-top: 25px;
+	color: #BDBFBF;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+form {
+	margin: 30px auto;
+	max-width: 700px;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+legend {
+	text-align: center;
+}
+
+input, label {
+	display: block;
+	padding: 10px;
+	width: 650px;
+}
+
+textarea {
+	display: block;
+	resize: none;
+	height: 100px;
+	width: 650px;
+	margin-bottom: 10px;
+}
+
+button {
+	display: block;
+	padding: 10px;
+}
+
+.list {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  color: #14261C;
+  /* background-color: #BDBFBF; */
+  padding-top:25px;
+  padding-bottom: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.gallery {
+  /* margin-top: 35px;
+  margin-right: 60px;
+  margin-bottom: 35px;
+  margin-left: 60px; */
+	margin: 0 auto;
+}
+
+.imagegrid {
+  display: grid;
+	margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 2px;
+  padding-top: 20px;
+}
+
+.photo img:hover {
+		opacity: .6;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footergrid {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.TA_rated {
+	display: flex;
+	justify-content: center;
+}
+
+footer img {
+	align-self: center;
+}
+
+footer {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+	color: #14261C;
+  background-color: #BDBFBF;
+  text-transform: uppercase;
+  text-decoration: none;
+	text-align: center;
+	width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+	/* padding-left: 75px; */
+}
+
+footer a {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  color: #14261C;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #31731F;
+}
+
+/*Some styles to center the carousel and
+make sure it doesn't take up the full width of the page*/
+.carousel-wrapper {
+	max-width: 600px;
+	margin: 0 auto 30px;
+}
+
+/*Some styles to center the carousel and
+make sure it doesn't take up the full width of the page*/
+.slick-next:before,
+.slick-prev:before {
+	/* Change arrow color */
+	color: #31731F;
+	height: 100px;
+	/* Change arrow size */
+	/*font-size: 30px;*/
+}
+
+@media screen and (max-width: 1158px) {
+	nav a {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1039px) {
+	nav {
+		padding-top: 0;
+		padding-bottom: 0;
+		display: none;
+	}
+	nav a {
+    display: block;
+    text-align: left;
+  }
+  .hamburger {
+    display: block;
+    text-align: left;
+		color: #44545E;
+  }
+}
+
+@media screen and (max-width: 800px) {
+	header {
+	  background-image: url(../img/front_of_hostel.jpg);
+	  max-width: 800px;
+	  height: 350px;
+	  background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	h1 {
+	  padding-top: 150px;
+	  font-family: 'Montserrat Alternates', sans-serif;
+	  font-size: 30px;
+	  color: #BDBFBF;
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  text-align: center;
+	}
+
+	.imagegrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: 5%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.imagegrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 5%;
+	width: 100%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.footergrid {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+footer img {
+	display: none;
+}
+
+.TA_rated {
+	display: flex;
+	justify-content: center;
+}
+}
