@@ -10,6 +10,9 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='custom.css' rel='stylesheet' type='text/css'>
   <!--<link rel="stylesheet" href="css/style.scss">-->
   <!--<link rel="stylesheet" href="css/normalize.css">-->
   <link rel="stylesheet" href="css/main.css">
@@ -27,8 +30,64 @@
   <main>
   <article class="section3">
     <h1>Contact San Juan Island Hostel</h1>
-    <p>Easily contact us by filling out the form below, or give us a call at (360) 370-5602, or email us at sjihostel.outlook.com.</p>
-    <form action="">
+    <p>Easily contact us by filling out the form below, or give us a call at (360) 370-5602, or email us at sjihostel@outlook.com.</p>
+    <p>We look forward to hearing from you and will get back to you as soon as we can!</p>
+
+    <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">First Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your fist name *" required="required" data-error="First Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Last Name *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone number">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        </div>
+    </div>
+
+</form>
+    <!--<form action="">
       <fieldset>
         <legend>Your Contact Info</legend>
         <label for="name">Full Name</label>
@@ -41,7 +100,7 @@
         <textarea placeholder="Enter your message here."></textarea>
         <button type="send">Send</button>
       </fieldset>
-    </form>
+    </form>-->
   </article>
   </main>
   <footer>
@@ -72,5 +131,9 @@
 
   <script src="js/jquery-1.12.0.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="validator.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
